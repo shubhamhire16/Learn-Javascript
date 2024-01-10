@@ -26,3 +26,5 @@ buttons.forEach((button)=>{
 
 ```
 
+### This is a javascript code solution for the theme changer project. Run the HTML file in your local environment to see the results.  
+

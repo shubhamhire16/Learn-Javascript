@@ -18,3 +18,4 @@ form.addEventListener('submit', (e)=>{
         result.innerHTML = `<span>${bmi}</span>`;
     }
 })
+console.log("BMI Calculator");

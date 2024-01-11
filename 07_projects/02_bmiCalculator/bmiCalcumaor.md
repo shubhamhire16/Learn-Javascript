@@ -24,6 +24,7 @@ form.addEventListener('submit', (e)=>{
     }
 })
 
+
 ```
 
 ### This is a javascript code solution for the BMI Calculator project. Run the HTML file in your local environment to see the results.  

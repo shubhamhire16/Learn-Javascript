@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XML API Request</title>
+    <style>
+        body{
+            background-color: #414141;
+            color: aliceblue;
+        }
+        #container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            width: 200px;
+        }
+        h1,h3{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color:rgb(227, 153, 153);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        
+    </div>
+</body>
+<script>
+    // const container = document.getElementById('container');
+    // const requestURL = 'https://api.github.com/users/shubhamhire16';
+    // const xhr = new XMLHttpRequest();
+    // console.log(xhr.readyState);
+    // xhr.open('GET', requestURL);
+    // xhr.onreadystatechange = function(){
+    //     console.log(xhr.readyState);
+    //     if(xhr.readyState==4){
+    //         const data = JSON.parse(this.responseText)
+    //         console.log(data);
+    //         container.innerHTML = `<img src='${data.avatar_url}'<br> <h1>${data.name}</h1> <h3>Followers Count: ${data.followers}</h3>`;
+    //     }
+    // }
+    // xhr.send();
+    
+    const requestUrl = 'https://api.github.com/users/hiteshchoudhary'
+    const httpReq = new XMLHttpRequest();
+    httpReq.open('GET',requestUrl);
+    httpReq.onreadystatechange = function(){
+        if(httpReq.readyState==4){
+            const data = JSON.parse(this.responseText)
+            console.log(data);
+            container.innerHTML = `<img src='${data.avatar_url}'<br> <h1>${data.name}</h1> <h3>Followers Count: ${data.followers}</h3>`;
+
+        }
+    }
+    httpReq.send();
+    
+</script>
+</html>

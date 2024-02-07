@@ -4,3 +4,4 @@
 2. TheOdinProject 
 3. https://developer.mozilla.org/en-US/docs/Web/JavaScript
 4. https://javascript.info/
+5. https://fullstackopen.com/en/
